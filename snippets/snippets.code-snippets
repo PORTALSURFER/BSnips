@@ -1,0 +1,44 @@
+{
+    "header": {
+        "prefix": [
+            "header"
+        ],
+        "body": [
+            "# Copyright PORTALSURFER, No rights reserved. \n# https: //www.blender.org/about/license/ \n$0"
+        ],
+        "description": "header"
+    },
+    "boperator": {
+        "prefix": [
+            "boperator",
+            "bops"
+        ],
+        "body": [
+            "class ${1:name}(bpy.types.Operator):",
+            "\t\"\"\"",
+            "\t${2:description}",
+            "\t\"\"\"",
+            "\tbl_idname = \"${3:idname} \"",
+            "\tbl_label = \"${4:label}\"",
+            "\t",
+            "\tdef execute(self, context):",
+            "\t$5",
+            "\treturn {'FINISHED'}",
+        ],
+        "description": "Blender Operator Class"
+    },
+    "bdef": {
+        "prefix": [
+            "bdef",
+            "bfunction"
+        ],
+        "body": [
+            "def  ${1:name}(${2:self, context}):",
+            "\t\"\"\"",
+            "\t${3:description}",
+            "\t\"\"\"",
+            "\t$4"
+        ],
+        "description": "Blender function with self, context params"
+    }
+}

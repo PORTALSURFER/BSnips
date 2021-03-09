@@ -1,0 +1,22 @@
+{
+    "publisher": "PORTALSURFER",
+    "repository": "https://github.com/PORTALSURFER/BSnips",
+    "name": "BSnips",
+    "displayName": "BlenderSnippets",
+    "description": "Snippets to help with development of blender addons, python",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]   
+    }
+}
